@@ -19,6 +19,16 @@
 	function noscroll() {
 		window.scrollTo( 0, 0 );
 	}
+// emailjs script
+$(".btn-contact").click(function(){
+	// parameters: service_id, template_id, template_parameters
+		emailjs.send("gmail", "template_GeQnWpZC", {"name":$('#name').val(),"reply_to":$('#mail').val(),"email":$('#mail').val(),"message":$('#message').val()})
+			.then(function(response) {
+ 					console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+			}, function(err) {
+ 					console.log("FAILED. error=", err);
+});
+});
 
 	// reset scrolling position
 	document.body.scrollTop = document.documentElement.scrollTop = 0;

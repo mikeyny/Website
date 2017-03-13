@@ -185,7 +185,7 @@
 					<div class="col-sm-offset-1 col-sm-10 col-xs-12">
 						<h4>  I’m a Firefox Student Ambassador ,tech junkuie ,asipiring developer, novice hacker ,Proud Zimbo and Christian.</br>
                I’m currently studying towards by BSc Honours in Computer Science at the National University of Science and Techonology</h4>
-					</div>
+
 				</div>
 			</div>
 		</div> <!-- /End About Section -->
@@ -203,7 +203,7 @@
 					<!-- Contact Section Heading -->
 					<h2 class="text-center title contact-title margin-btm-x">Contact Me</h2>
 					<!-- Contact Form -->
-					<form id="contact-form" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12" action="send.php" method="post" name="send">
+					<form id="contact-form" class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12" name="send">
 						<div class="form-group">
 							<label for="name">Name</label>
 						  	<input id="name" name="name" placeholder="Your name" class="form-control requiredField name input-label" data-new-placeholder="Your name" type="text">
@@ -219,7 +219,7 @@
 							<textarea id="message" name="message" placeholder="Your message" class="form-control requiredField input-label" data-new-placeholder="Your message" rows="6"></textarea>
 							<i class="fa fa-comment"></i>
 						</div><!-- End textarea -->
-						<p><button name="submit" type="submit" class="btn btn-block btn-contact">Send Message&nbsp;<i class="fa fa-send-o"></i></button></p>
+						<p><button name="submit"  class="btn btn-block btn-contact">Send Message&nbsp;<i class="fa fa-send-o"></i></button></p>
 					</form>	<!-- /End Contact Form -->
 				</div>
 			</div>
@@ -271,6 +271,13 @@
 <script src="switcher/switcher.js"></script>
 <!-- Plugin Initialization js -->
 <script src="js/plugins.js"></script>
+<!-- emailjs -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_PWxMAecxpqzAWo2xS3Ex5");
+   })();
+</script>
 <!-- Custom JS -->
 <script src="js/main.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
